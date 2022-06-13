@@ -1,0 +1,29 @@
+p{
+  padding:5px;         /* 空白 */
+  border: solid;        /* 枠線 */
+  border:3px solid;     /* 枠線の太さ */
+  border-radius:8px;    /* 枠線の角の半径 */
+  display:inline-block; /* 文字のある部分だけ枠線を書く */
+}
+  
+body{
+  padding:20px;
+  text-align: center;   /* 中央揃え */
+  /*background-color: rgb(109, 212, 114);*/
+}
+
+.thier-video{
+    border:6px solid;
+    border-radius:8px;
+    display:inline-block;
+    border-color:darkblue;
+    margin:5px;
+  }
+  
+  .my-video{
+    border:6px solid;
+    border-radius:8px;
+    display:inline-block;
+    border-color:chocolate;   /* 枠線の色 */
+    margin:5px;          /* 要素間の空白 */
+  }
