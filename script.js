@@ -51,7 +51,7 @@
       await remoteVideo.play().catch(console.error);
       
       //自分のビデオ映像を再生
-      localVideo.srcObject = stream;
+      localVideo.srcObject = localStream;
       localVideo.playsInline = true;
       await localVideo.play().catch(console.error);
     });
@@ -90,7 +90,7 @@
       await remoteVideo.play().catch(console.error);
 
       //自分のビデオ映像を再生
-      localVideo.srcObject = stream;
+      localVideo.srcObject = localStream;
       localVideo.playsInline = true;
       await localVideo.play().catch(console.error);
     });
