@@ -33,7 +33,7 @@
     <div class="model">
       <div class="thier-video">
         <!-- 相手側のビデオ表示 muted属性は音声をミュートにする style要素で映像を左右反転 --> 
-        <video id="their-video" style="transform: scaleX(-1);" width="700px" height="400px" autoplay playsinline></video> 
+        <video id="their-video" style="transform: scaleX(-1);" width="650px" height="350px" autoplay playsinline></video> 
       </div>
 
       <div class="my-video">
@@ -45,9 +45,9 @@
         <from class="row align-items-center">
           <div class="coll-auto">
             <!-- マイクミュートボタン -->
-            <button type="submit" class="btn btn-info btn" id="mute">マイクオン</button>
+            <button type="submit" class="btn btn-info btn-lg" id="mute">マイクオン</button>
             <!-- 発信者側のPeerID表示 -->
-            <p class="h5">あなたのID : <span id="my-id"></span></p>
+            <p class="h6">あなたのID : <span id="my-id"></span></p>
             <!-- 相手側のPeerID入力 -->
             <input type="text" class="form-control-lg" id="their-id" placeholder="相手のPeerIDを入力">
             <!-- 発信、通話終了ボタン -->
