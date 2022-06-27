@@ -1,0 +1,53 @@
+p{
+  padding: 5px;         /* 空白 */
+  border: solid;        /* 枠線 */
+  border:3px solid;     /* 枠線の太さ */
+  border-radius:8px;    /* 枠線の角の半径 */
+  display:inline-block; /* 文字のある部分だけ枠線を書く */
+} 
+
+body{
+  padding: 10px;
+  text-align: center; /* 中央揃え */
+  /*background-color: rgb(109, 212, 114);*/
+}
+
+.time{
+  text-align: left;
+  font-size: 120%;
+  font-weight: bold;
+}
+  
+
+.thier-video{
+    border:6px solid;
+    border-radius:8px;
+    display:inline-block;
+    border-color:darkblue;
+    margin:5px;
+  }
+  
+  .my-video{
+    border:6px solid;
+    border-radius:8px;
+    display:inline-block;
+    border-color:chocolate;   /* 枠線の色 */
+    margin:5px;          /* 要素間の空白 */
+  }
+
+  .yes-no{
+    margin-right: 50px;
+    margin-bottom: 10px;
+    text-align: right;
+    vertical-align: top;
+   }
+
+   .reaction{
+    font-size: 200%;     /* フォントサイズ */
+    font-weight: bold;   /* フォント太字 */
+    margin-top: 20px;    /* マージンの上側余白 */
+    margin-right: 40px;  /* マージンの右側余白 */
+    text-align: right;   /* テキストを右寄せ */
+    vertical-align: top; /* テキストを上揃え */
+   }
+
