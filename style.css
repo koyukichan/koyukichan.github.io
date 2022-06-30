@@ -50,3 +50,6 @@ body{
     vertical-align: top; /* テキストを上揃え */
    }
 
+   pre{
+    font-size: 120%;     /* フォントサイズ */
+   }
