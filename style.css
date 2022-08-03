@@ -1,0 +1,99 @@
+/* 自分のID */
+.h5{
+  padding: 5px;         /* 空白 */
+  border: solid;        /* 枠線 */
+  border:3px solid;     /* 枠線の太さ */
+  border-radius:8px;    /* 枠線の角の半径 */
+  display:inline-block; /* 文字のある部分だけ枠線を書く */
+} 
+
+
+body{
+  padding: 10px;
+  text-align: center; /* 中央揃え */
+  /*background-color: rgb(109, 212, 114);*/
+}  
+
+
+/* ID選択ボックス */
+.theirID{
+  font-size: 130%;     /*フォントサイズ*/
+}
+
+
+/* 相手のビデオ映像 */
+.thier-video{
+  border:6px solid;
+  border-radius:8px;
+  display:inline-block;
+  border-color:darkblue;
+  margin:5px;
+}
+  
+/* 自分のビデオ映像 */
+.my-video{
+  border:6px solid;
+  border-radius:8px;
+  display:inline-block;
+  border-color:chocolate;   /* 枠線の色 */
+  margin:5px;                 /* 要素間の空白 */
+}
+
+
+/* チャット */
+.yes-no{
+  text-align: right;
+  vertical-align: top;
+}
+
+/* チャットメッセージ */
+.messages{
+  text-align: left;
+  font-weight: bold;   /* フォント太字 */
+  overflow-y: auto;    /*必要に応じて縦スクロール表示*/
+  height: 40px;
+  background-color:antiquewhite;
+}
+
+/* リアクションボタン */
+pre{
+  margin-bottom: 5px;    /* マージンの下側余白 */
+}
+
+
+/* 着信処理モーダルウィンドウ */
+.modal {
+  display: none;        /* ボックスの表示形状(none…非表示) */
+  position: fixed;      /* ボックスの配置方法(fixed…ウィンドウ基準の絶対位置への配置‹スクロール固定›) */
+  /*z-index: 1;            ボックスの重なり順序(値が大きいほど手前に表示される) ※z-indezだとandroidでは表示されないので以下の3行で表示 */
+  -webkit-transform: translate3d(0, 0, 3px);
+	transform: translate3d(0, 0, 3px);
+	position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;       /* ボックス内に収まりきらない内容をどう処理するか(aute…スクロールで表示) */
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #ffffff;
+  margin: 20% auto;
+  width: 50%;
+  box-shadow: 0 5px 8px 0 rgba(23, 23, 23, 0.2);      /* ボックスに影をつける */
+  animation-name: modalopen;          /* アニメーションのキーフレームを示す(下の@) */
+  animation-duration: 1s;             /* アニメーションの再生方法 */
+}
+
+@keyframes modalopen {          /* キーフレーム…アニメーションの制御 */
+  from {opacity: 0}             /* アニメーションの始まり */
+  to {opacity: 1}               /* アニメーションの終わり */
+}
+
+.modal-body {                   /* モーダルウィンドウのpタグ */
+  padding: 10px 20px;
+  color: black;
+  font-size: 200%;
+}
+
