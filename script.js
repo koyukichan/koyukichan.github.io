@@ -242,7 +242,6 @@
     });
   });
 
-
   function spawnNotification(theBody="着信があります",theTitle="ビデオ通話") {
     const options = {
         body: theBody
