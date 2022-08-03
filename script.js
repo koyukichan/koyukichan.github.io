@@ -255,7 +255,7 @@
   peer.on('call', mediaConnection => {
     //着信通知
     //var videomes = new Notification("着信があります");
-    //spawnNotification();
+    spawnNotification();
     
     
     //着信を応答するか拒否するかを選択するモーダルウィンドウを表示
