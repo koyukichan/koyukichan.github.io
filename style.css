@@ -65,7 +65,9 @@ pre{
 .modal {
   display: none;        /* ボックスの表示形状(none…非表示) */
   position: fixed;      /* ボックスの配置方法(fixed…ウィンドウ基準の絶対位置への配置‹スクロール固定›) */
-  z-index: 1;           /* ボックスの重なり順序(値が大きいほど手前に表示される) */
+  -webkit-transform: translate3d(0, 0, 1px);
+	transform: translate3d(0, 0, 1px);
+	position: absolute;
   left: 0;
   top: 0;
   height: 100%;
